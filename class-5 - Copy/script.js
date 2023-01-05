@@ -3,15 +3,15 @@ jQuery(document).ready(function()
     jQuery('.clickhere').click(function()
     {
         $.ajax({
-            url: "process.php",
-            type: "post",
-            data: 
+            'url': "process.php",
+            'type': "post",
+            'data': 
             {
-                name: 'Mueid',
-                address: "Narayanganj"
+                'name': 'Mueid',
+                'address': "Narayanganj"
             },
 
-            success: function (response) {
+            'success': function (response) {
                 jQuery('.information').html(response);
             }
         });
